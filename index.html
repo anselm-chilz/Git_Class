@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> This is just a git game!</h1>
+    <button id="color-change-btn">Click to Change Background Color</button>
+
+    <script>
+        document.getElementById('color-change-btn').addEventListener('click', function() {
+          var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+          document.body.style.backgroundColor = randomColor;
+        });
+      </script>
 </body>
 </html>
